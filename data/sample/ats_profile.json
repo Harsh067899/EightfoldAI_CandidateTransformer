@@ -1,0 +1,23 @@
+{
+  "candidateId": "C-10293",
+  "firstName": "Maya",
+  "lastName": "Chen",
+  "emailAddress": "maya.chen@example.com",
+  "phoneNumber": "+1 415-555-0182",
+  "jobTitle": "Staff Software Engineer",
+  "location": {
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+  },
+  "yearsExperience": 8,
+  "skills": ["Python", "Kubernetes", "PostgreSQL", "REST"],
+  "githubUrl": "github.com/mayachen",
+  "workHistory": [
+    {"title": "Senior Software Engineer", "company": "Acme Robotics", "startDate": "2021-01", "endDate": "present"},
+    {"title": "Backend Engineer", "company": "Globex", "startDate": "2018-06", "endDate": "2020-12"}
+  ],
+  "education": [
+    {"institution": "UC Berkeley", "degree": "B.S.", "field": "Computer Science", "endYear": 2016}
+  ]
+}
