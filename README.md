@@ -9,6 +9,38 @@ guess.
 
 ---
 
+## Architecture at a glance
+
+The engine builds one rich internal record; a separate projection layer formats
+the requested output. The engine never sees the output config — so output
+changes can never touch resolution logic.
+
+```mermaid
+flowchart LR
+    subgraph In["Inputs"]
+        S["CSV · ATS JSON<br/>Resume · Notes"]
+    end
+    subgraph Engine["ENGINE — builds the truth (config-blind)"]
+        E["adapters → normalize → match → merge"]
+        C[("CanonicalProfile<br/>+ provenance + confidence")]
+        E --> C
+    end
+    subgraph Proj["PROJECTION — formats the answer"]
+        P["project → validate → JSON"]
+    end
+    CFG["runtime config"]
+    S --> E
+    C --> P
+    CFG -. only touches projection .-> P
+```
+
+📐 **Full design:** deeper diagrams (class model, request sequence, observation
+lifecycle) and rationale live in **[ARCHITECTURE.md](ARCHITECTURE.md)**; editable
+sources are in [`docs/diagrams/`](docs/diagrams). The one-page Stage 1 design is
+[`outputs/HarshSahu_harshsahuhh@gmail.com_Eightfold.pdf`](outputs/).
+
+---
+
 ## Quick start
 
 ```bash
