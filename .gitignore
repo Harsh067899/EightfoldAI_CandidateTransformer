@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+temp_extracted.txt
+
+outputs/Design_YourName_youremail_Eightfold.pdf

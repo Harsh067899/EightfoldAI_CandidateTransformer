@@ -1,0 +1,29 @@
+[project]
+name = "candidate-transformer"
+version = "0.1.0"
+description = "Multi-source candidate data transformer with provenance and confidence"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "phonenumbers>=8.13",
+    "python-dateutil>=2.8",
+    "pycountry>=22.0",
+    "rapidfuzz>=3.0",
+    "pdfplumber>=0.10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+canonical = "canonical.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
