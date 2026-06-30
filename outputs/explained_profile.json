@@ -1,0 +1,365 @@
+{
+  "profile": {
+    "candidate_id": "C-10293",
+    "full_name": "Maya R. Chen",
+    "emails": [
+      "maya.chen@example.com"
+    ],
+    "phones": [
+      "+14155550182"
+    ],
+    "location": {
+      "city": "San Francisco",
+      "region": "California",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "linkedin.com/in/mayachen",
+      "github": "github.com/mayachen",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Senior Software Engineer at Acme Robotics",
+    "years_experience": 8.0,
+    "skills": [
+      {
+        "name": "Docker",
+        "confidence": 0.455,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.455,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "confidence": 0.8719,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "confidence": 0.8719,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "Python",
+        "confidence": 0.8719,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.455,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "REST APIs",
+        "confidence": 0.8719,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "title": "Senior Software Engineer",
+        "company": "Acme Robotics",
+        "start": "2021-01",
+        "end": "present",
+        "summary": null
+      },
+      {
+        "title": "Backend Engineer",
+        "company": "Globex",
+        "start": "2018-06",
+        "end": "2020-12",
+        "summary": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S.",
+        "field": "Computer Science",
+        "end_year": "2016"
+      }
+    ]
+  },
+  "explain": {
+    "candidate_id": {
+      "confidence": 1.0,
+      "provenance": [
+        {
+          "source": "recruiter_csv",
+          "method": "structured_field",
+          "raw_value": "C-10293",
+          "corroborated_by": [
+            "ats_json"
+          ],
+          "conflicted_with": [],
+          "decision": "chose value from recruiter_csv (structured_field); corroborated by ats_json"
+        }
+      ]
+    },
+    "full_name": {
+      "confidence": 0.5939,
+      "provenance": [
+        {
+          "source": "recruiter_csv",
+          "method": "structured_field",
+          "raw_value": "Maya R. Chen",
+          "corroborated_by": [],
+          "conflicted_with": [
+            "ats_json",
+            "recruiter_notes",
+            "resume"
+          ],
+          "decision": "chose value from recruiter_csv (structured_field); outranked ats_json, recruiter_notes, resume on source/method trust"
+        }
+      ]
+    },
+    "emails": {
+      "confidence": 1.0,
+      "provenance": [
+        {
+          "source": "recruiter_csv",
+          "method": "structured_field",
+          "raw_value": "maya.chen@example.com",
+          "corroborated_by": [
+            "ats_json",
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from recruiter_csv; also in ats_json, resume; suppressed likely typo 'maya.chen@exmaple.con'"
+        }
+      ]
+    },
+    "phones": {
+      "confidence": 1.0,
+      "provenance": [
+        {
+          "source": "recruiter_csv",
+          "method": "structured_field",
+          "raw_value": "(415) 555-0182",
+          "corroborated_by": [
+            "ats_json",
+            "recruiter_notes",
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from recruiter_csv; also in ats_json, recruiter_notes, resume"
+        }
+      ]
+    },
+    "location": {
+      "confidence": 0.6325,
+      "provenance": [
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": {
+            "city": "San Francisco",
+            "state": "California",
+            "country": "United States"
+          },
+          "corroborated_by": [],
+          "conflicted_with": [
+            "recruiter_notes"
+          ],
+          "decision": "chose value from ats_json (semi_structured); outranked recruiter_notes on source/method trust"
+        }
+      ]
+    },
+    "links": {
+      "confidence": 0.545,
+      "provenance": [
+        {
+          "source": "resume",
+          "method": "regex_prose",
+          "raw_value": "linkedin.com/in/mayachen",
+          "corroborated_by": [],
+          "conflicted_with": [],
+          "decision": "linkedin link from resume"
+        },
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": "github.com/mayachen",
+          "corroborated_by": [],
+          "conflicted_with": [],
+          "decision": "github link from ats_json"
+        }
+      ]
+    },
+    "headline": {
+      "confidence": 0.6558,
+      "provenance": [
+        {
+          "source": "recruiter_csv",
+          "method": "structured_field",
+          "raw_value": "Senior Software Engineer",
+          "corroborated_by": [],
+          "conflicted_with": [
+            "ats_json"
+          ],
+          "decision": "chose value from recruiter_csv (structured_field); outranked ats_json on source/method trust"
+        }
+      ]
+    },
+    "years_experience": {
+      "confidence": 0.765,
+      "provenance": [
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": 8,
+          "corroborated_by": [],
+          "conflicted_with": [],
+          "decision": "chose value from ats_json (semi_structured)"
+        }
+      ]
+    },
+    "skills": {
+      "confidence": 0.6932,
+      "provenance": [
+        {
+          "source": "resume",
+          "method": "labeled_prose",
+          "raw_value": "Docker",
+          "corroborated_by": [],
+          "conflicted_with": [],
+          "decision": "included from resume"
+        },
+        {
+          "source": "resume",
+          "method": "labeled_prose",
+          "raw_value": "JS",
+          "corroborated_by": [],
+          "conflicted_with": [],
+          "decision": "included from resume"
+        },
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": "Kubernetes",
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        },
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": "PostgreSQL",
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        },
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": "Python",
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        },
+        {
+          "source": "resume",
+          "method": "labeled_prose",
+          "raw_value": "React",
+          "corroborated_by": [],
+          "conflicted_with": [],
+          "decision": "included from resume"
+        },
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": "REST",
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        }
+      ]
+    },
+    "experience": {
+      "confidence": 0.8719,
+      "provenance": [
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": {
+            "title": "Senior Software Engineer",
+            "company": "Acme Robotics",
+            "startDate": "2021-01",
+            "endDate": "present"
+          },
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        },
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": {
+            "title": "Backend Engineer",
+            "company": "Globex",
+            "startDate": "2018-06",
+            "endDate": "2020-12"
+          },
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        }
+      ]
+    },
+    "education": {
+      "confidence": 0.8719,
+      "provenance": [
+        {
+          "source": "ats_json",
+          "method": "semi_structured",
+          "raw_value": {
+            "institution": "UC Berkeley",
+            "degree": "B.S.",
+            "field": "Computer Science",
+            "endYear": 2016
+          },
+          "corroborated_by": [
+            "resume"
+          ],
+          "conflicted_with": [],
+          "decision": "included from ats_json; also in resume"
+        }
+      ]
+    }
+  },
+  "valid": true,
+  "problems": []
+}

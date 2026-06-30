@@ -1,0 +1,200 @@
+{
+  "candidate_id": "C-10293",
+  "full_name": "Maya R. Chen",
+  "emails": [
+    "maya.chen@example.com"
+  ],
+  "phones": [
+    "+14155550182"
+  ],
+  "location": {
+    "city": "San Francisco",
+    "region": "California",
+    "country": "US"
+  },
+  "links": {
+    "linkedin": "linkedin.com/in/mayachen",
+    "github": "github.com/mayachen",
+    "portfolio": null,
+    "other": []
+  },
+  "headline": "Senior Software Engineer at Acme Robotics",
+  "years_experience": 8.0,
+  "skills": [
+    {
+      "name": "Docker",
+      "confidence": 0.455,
+      "sources": [
+        "resume"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "confidence": 0.455,
+      "sources": [
+        "resume"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "confidence": 0.8719,
+      "sources": [
+        "ats_json",
+        "resume"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "confidence": 0.8719,
+      "sources": [
+        "ats_json",
+        "resume"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.8719,
+      "sources": [
+        "ats_json",
+        "resume"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.455,
+      "sources": [
+        "resume"
+      ]
+    },
+    {
+      "name": "REST APIs",
+      "confidence": 0.8719,
+      "sources": [
+        "ats_json",
+        "resume"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Acme Robotics",
+      "start": "2021-01",
+      "end": "present",
+      "summary": null
+    },
+    {
+      "title": "Backend Engineer",
+      "company": "Globex",
+      "start": "2018-06",
+      "end": "2020-12",
+      "summary": null
+    }
+  ],
+  "education": [
+    {
+      "institution": "UC Berkeley",
+      "degree": "B.S.",
+      "field": "Computer Science",
+      "end_year": "2016"
+    }
+  ],
+  "overall_confidence": 0.7845,
+  "provenance": [
+    {
+      "field": "candidate_id",
+      "source": "recruiter_csv",
+      "method": "structured_field"
+    },
+    {
+      "field": "full_name",
+      "source": "recruiter_csv",
+      "method": "structured_field"
+    },
+    {
+      "field": "emails",
+      "source": "recruiter_csv",
+      "method": "structured_field"
+    },
+    {
+      "field": "phones",
+      "source": "recruiter_csv",
+      "method": "structured_field"
+    },
+    {
+      "field": "location",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "links",
+      "source": "resume",
+      "method": "regex_prose"
+    },
+    {
+      "field": "links",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "headline",
+      "source": "recruiter_csv",
+      "method": "structured_field"
+    },
+    {
+      "field": "years_experience",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "skills",
+      "source": "resume",
+      "method": "labeled_prose"
+    },
+    {
+      "field": "skills",
+      "source": "resume",
+      "method": "labeled_prose"
+    },
+    {
+      "field": "skills",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "skills",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "skills",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "skills",
+      "source": "resume",
+      "method": "labeled_prose"
+    },
+    {
+      "field": "skills",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "experience",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "experience",
+      "source": "ats_json",
+      "method": "semi_structured"
+    },
+    {
+      "field": "education",
+      "source": "ats_json",
+      "method": "semi_structured"
+    }
+  ]
+}

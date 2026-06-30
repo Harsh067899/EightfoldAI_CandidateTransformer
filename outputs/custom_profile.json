@@ -1,0 +1,27 @@
+{
+  "full_name": "Maya R. Chen",
+  "_confidence": {
+    "full_name": 0.5939,
+    "primary_email": 1.0,
+    "phone": 1.0,
+    "country": 0.6325,
+    "skills": 0.6932,
+    "title": 0.6558,
+    "github": 0.545
+  },
+  "primary_email": "maya.chen@example.com",
+  "phone": "+14155550182",
+  "country": "US",
+  "skills": [
+    "Docker",
+    "JavaScript",
+    "Kubernetes",
+    "PostgreSQL",
+    "Python",
+    "React",
+    "REST APIs"
+  ],
+  "title": "Senior Software Engineer at Acme Robotics",
+  "github": "github.com/mayachen",
+  "overall_confidence": 0.7845
+}
